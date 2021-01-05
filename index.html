@@ -427,7 +427,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2021/01/04/%E6%88%91%E7%9A%84blog%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0/" itemprop="url">未命名</a></h1>
+                <a class="post-title-link" href="/2021/01/04/%E6%88%91%E7%9A%84blog%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0/" itemprop="url">个人博客搭建</a></h1>
         
 
         <div class="post-meta">
@@ -439,7 +439,7 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-01-04T22:38:46+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-01-04T22:00:00+08:00">
                 2021-01-04
               </time>
             
@@ -488,7 +488,7 @@
 <p>​            下一步就是在本地新建一个文件夹，例如/usr/blog。terminal进入到该文件夹中，执行命令<code>hexo init</code>，待命令执行完成之后，从finder进入文件夹可以看到文件夹中已经完成了整个框架的建立。回到terminal，执行<code>hexo g</code>即generate再执行<code>hexo s</code>即start，可以看到本地的<a target="_blank" rel="noopener" href="http://localhost:4000/">localhost:4000</a>中已经有了基础的界面，还为你写好了第一篇博文“Hello World”。</p>
 <p>​            接下来我们肯定是需要将博客放到网上，这里我使用免费的github来完成，登陆自己的github账号，新建一个库，注意，库名一定要是自己github的ID.github.io。例如我的账号为Azurelyu，所以我的库名就是Azurelyu.githu.io。回到本地，我们回到blog文件夹，这个时候需要用<code>npm install --save hexo-deployer-git</code>来完成我们与github的交互。修改blog文件夹下的_config.yml的最下面的</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: https:&#x2F;&#x2F;github.com&#x2F;Azurelyu&#x2F;Azurelyu.github.io.git（这段就是该仓库的地址）</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
-<p>注意，下面的三个冒号后面有一个空格。回到blog文件夹<code>hexo clean``hexo g``hexo d</code>执行完这三步之后可以看到博客已经上传到Azurelyu.github.io上了。</p>
+<p>注意，下面的三个冒号后面有一个空格。回到blog文件夹<code>hexo clean hexo g hexo d</code>执行完这三步之后可以看到博客已经上传到Azurelyu.github.io上了。</p>
 <p>​            以上就是hexo的最基础部署。-</p>
 
           
