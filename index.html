@@ -274,7 +274,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/uploads/yiy.png">
+      <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -393,7 +393,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/uploads/yiy.png">
+      <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -469,7 +469,7 @@
 <p>​            接下来我们肯定是需要将博客放到网上，这里我使用免费的github来完成，登陆自己的github账号，新建一个库，注意，库名一定要是自己github的ID.github.io。例如我的账号为Azurelyu，所以我的库名就是Azurelyu.githu.io。回到本地，我们回到blog文件夹，这个时候需要用<code>npm install --save hexo-deployer-git</code>来完成我们与github的交互。修改blog文件夹下的_config.yml的最下面的</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: https:&#x2F;&#x2F;github.com&#x2F;Azurelyu&#x2F;Azurelyu.github.io.git（这段就是该仓库的地址）</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
 <p>注意，下面的三个冒号后面有一个空格。回到blog文件夹<code>hexo clean hexo g hexo d</code>执行完这三步之后可以看到博客已经上传到Azurelyu.github.io上了。</p>
-<p>​            以上就是hexo的最基础部署。-</p>
+<p>​            以上就是hexo的最基础部署。</p>
 
           
         
@@ -523,7 +523,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/uploads/yiy.png">
+      <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -661,10 +661,6 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
-              <img class="site-author-image" itemprop="image"
-                src="/uploads/yiy.png"
-                alt="" />
-            
               <p class="site-author-name" itemprop="name"></p>
               <p class="site-description motion-element" itemprop="description"></p>
           </div>
@@ -674,7 +670,7 @@
             
               <div class="site-state-item site-state-posts">
               
-                <a href="/archives/%7C%7C%20archive">
+                <a href="/archives/%7C%7Carchive">
               
                   <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">日志</span>
@@ -684,6 +680,15 @@
 
             
 
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
             
 
           </nav>
