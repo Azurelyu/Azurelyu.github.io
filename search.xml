@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>给个人博客换上专属的免费域名</title>
+    <url>/2021/01/06/%E7%BB%99%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%8D%A2%E4%B8%8A%E4%B8%93%E5%B1%9E%E7%9A%84%E5%85%8D%E8%B4%B9%E5%9F%9F%E5%90%8D/</url>
+    <content><![CDATA[<h1 id="给个人博客换上专属的免费域名"><a href="#给个人博客换上专属的免费域名" class="headerlink" title=" 给个人博客换上专属的免费域名"></a><center> 给个人博客换上专属的免费域名</center></h1><h2 id="【github-hexo-freenom-dnspod】"><a href="#【github-hexo-freenom-dnspod】" class="headerlink" title=" 【github+hexo+freenom+dnspod】"></a><center> 【github+hexo+freenom+dnspod】</center></h2><p>今天真是波折的一天，折腾了一天，终于把各种都准备好了，域名什么的也都完成了。很感谢百度2333，让我有机会找到那么多教程。好了，废话不多说，开干！</p>
+<hr>
+<p>这一切的前提是搭建好了一个部署在githubpage上的个人博客，比如参考我之前写的文章。</p>
+<h3 id="第一步：申请一个免费域名"><a href="#第一步：申请一个免费域名" class="headerlink" title="第一步：申请一个免费域名"></a>第一步：申请一个免费域名</h3><p>免费域名申请网站<a href="http://https//www.freenom.com/zh/index.html?lang=zh">freenom</a>,直接输入自己想要的名字，然后可以在搜索结果界面找到免费的，注意，它默认是3个月，记得改成12个月。并且，需要科学上网，而且需要将网站的个人资料上的地址等改成美国的，可以用这个网站<a href="http://www.haoweichi.com/">好维持</a>生成一个虚假身份。</p>
+<h3 id="第二步：DNS解析"><a href="#第二步：DNS解析" class="headerlink" title="第二步：DNS解析"></a>第二步：DNS解析</h3><p>我使用的是DNSPOD，腾讯云的一款产品。</p>
+]]></content>
+      <tags>
+        <tag>博客搭建教程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>今日美化</title>
+    <url>/2021/01/05/%E4%BB%8A%E6%97%A5%E7%BE%8E%E5%8C%96/</url>
+    <content><![CDATA[]]></content>
+      <tags>
+        <tag>美化</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>个人博客搭建</title>
+    <url>/2021/01/04/%E6%88%91%E7%9A%84blog%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<h1 id="azure1yu个人博客搭建"><a href="#azure1yu个人博客搭建" class="headerlink" title="azure1yu个人博客搭建"></a><strong>azure1yu个人博客搭建</strong></h1><h2 id="一、前期准备"><a href="#一、前期准备" class="headerlink" title="一、前期准备"></a>一、前期准备</h2><h3 id="Markdown语法"><a href="#Markdown语法" class="headerlink" title="Markdown语法"></a>Markdown语法</h3><p>​        <a href="https://www.jianshu.com/p/191d1e21f7ed/">语法</a></p>
+<p>​        <del>感觉流程图没什么用，最后选用了Typora来作为记录的Markdown工具。</del></p>
+<h2 id="二、服务器和域名"><a href="#二、服务器和域名" class="headerlink" title="二、服务器和域名"></a>二、服务器和域名</h2><p>​        在阿里云上买的服务器和域名，域名是azure1yu.top。</p>
+<h2 id="三、Hexo"><a href="#三、Hexo" class="headerlink" title="三、Hexo"></a>三、Hexo</h2><p>​        不准备用Wordpress了，用hexo。</p>
+<h3 id="1-hexo的配置环节"><a href="#1-hexo的配置环节" class="headerlink" title="1.hexo的配置环节"></a>1.hexo的配置环节</h3><p>​            基于mac下完成。需要的有homebrew、nodejs、git。</p>
+<p>​            其中，git一般mac都是自带的，homebrew和nodejs都可以去官方网站下载。<a href="http://brew.sh/">homebrew</a>以及<a href="http://nodejs.org/">nodejs</a>完成之后，就需要来配置hexo，可以去hexo.io官网，看到<code>npm install hexo-cli -g</code>。这个时候就完成了对hexo框架的下载。</p>
+<p>​            下一步就是在本地新建一个文件夹，例如/usr/blog。terminal进入到该文件夹中，执行命令<code>hexo init</code>，待命令执行完成之后，从finder进入文件夹可以看到文件夹中已经完成了整个框架的建立。回到terminal，执行<code>hexo g</code>即generate再执行<code>hexo s</code>即start，可以看到本地的<a href="http://localhost:4000/">localhost:4000</a>中已经有了基础的界面，还为你写好了第一篇博文“Hello World”。</p>
+<p>​            接下来我们肯定是需要将博客放到网上，这里我使用免费的github来完成，登陆自己的github账号，新建一个库，注意，库名一定要是自己github的ID.github.io。例如我的账号为Azurelyu，所以我的库名就是Azurelyu.githu.io。回到本地，我们回到blog文件夹，这个时候需要用<code>npm install --save hexo-deployer-git</code>来完成我们与github的交互。修改blog文件夹下的_config.yml的最下面的</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: https:&#x2F;&#x2F;github.com&#x2F;Azurelyu&#x2F;Azurelyu.github.io.git（这段就是该仓库的地址）</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
+<p>注意，下面的三个冒号后面有一个空格。回到blog文件夹<code>hexo clean hexo g hexo d</code>执行完这三步之后可以看到博客已经上传到Azurelyu.github.io上了。</p>
+<p>​            以上就是hexo的最基础部署。</p>
+]]></content>
+      <tags>
+        <tag>博客搭建教程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第一篇测试</title>
+    <url>/2021/01/04/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%B5%8B%E8%AF%95/</url>
+    <content><![CDATA[<h2 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h2><h2 id="内容"><a href="#内容" class="headerlink" title="内容"></a>内容</h2><h2 id="第二章"><a href="#第二章" class="headerlink" title="第二章"></a>第二章</h2><h2 id="内容-1"><a href="#内容-1" class="headerlink" title="内容"></a>内容</h2><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><hr>
+<p>azurelyu.github.io</p>
+]]></content>
+      <tags>
+        <tag>test</tag>
+      </tags>
+  </entry>
+</search>
